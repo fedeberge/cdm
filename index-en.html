@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Cazadores de monstruos</title>
+    <title>Monster Hunters</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="color-scheme" content="light only" />
     <meta
       name="description"
-      content="Una serie animada independiente sobre una joven cazadora de monstruos, viaja junto a su compañero y mentor en busca de una cura para la maldición que la está convirtiendo en un monstruo." />
-    <meta property="og:site_name" content="Cazadores de monstruos" />
-    <meta property="og:title" content="Cazadores de monstruos" />
+      content="An indie animated series about a young monster hunter who embarks on a quest alongside her companion and mentor to find the cure to the curse that&#039;s turning her into a monster." />
+    <meta property="og:site_name" content="Monster Hunters" />
+    <meta property="og:title" content="Monster Hunters" />
     <meta property="og:type" content="website" />
     <meta
       property="og:description"
-      content="Una serie animada independiente sobre una joven cazadora de monstruos, viaja junto a su compañero y mentor en busca de una cura para la maldición que la está convirtiendo en un monstruo." />
+      content="An indie animated series about a young monster hunter who embarks on a quest alongside her companion and mentor to find the cure to the curse that&#039;s turning her into a monster." />
     <meta
       property="og:image"
-      content="assets/images/card.jpg?v=8805bece" />
+      content="assets/images/card-en.jpg" />
     <meta property="og:image:type" content="image/jpeg" />
     <meta property="og:image:width" content="1280" />
     <meta property="og:image:height" content="800" />
@@ -281,7 +281,7 @@
       }
       #main > .inner {
         --padding-horizontal: 3rem;
-        --padding-vertical: 3rem;
+        --padding-vertical: 0.375rem;
         --spacing: 0.75rem;
         --width: 100vw;
         border-radius: var(--border-radius-tl) var(--border-radius-tr)
@@ -385,13 +385,13 @@
         vertical-align: middle;
         white-space: nowrap;
       }
-      #buttons02 {
+      #buttons01 {
         justify-content: flex-end;
         gap: 0.75rem;
         flex-direction: row;
         flex-wrap: wrap;
       }
-      #buttons02 li a {
+      #buttons01 li a {
         display: inline-flex;
         width: 6.125rem;
         height: 1.625rem;
@@ -405,7 +405,7 @@
         transition: color 0.25s ease, background-color 0.25s ease,
           border-color 0.25s ease;
       }
-      #buttons02 li a svg {
+      #buttons01 li a svg {
         display: block;
         fill: #ffffff;
         flex-grow: 0;
@@ -417,11 +417,11 @@
         margin-right: calc(0.5em + 0rem);
         transition: fill 0.25s ease;
       }
-      #buttons02 li a .label {
+      #buttons01 li a .label {
         direction: var(--site-language-direction);
         overflow: hidden;
       }
-      #buttons02 .button {
+      #buttons01 .button {
         background-color: #000000;
         color: #ffffff;
       }
@@ -433,8 +433,8 @@
       }
       .image .frame {
         backface-visibility: hidden;
-        -webkit-backface-visibility: hidden;
         transform: translate3d(0, 0, 0);
+        -webkit-backface-visibility: hidden;
         -webkit-transform: translate3d(0, 0, 0);
         display: inline-block;
         max-width: 100%;
@@ -459,22 +459,55 @@
         border-bottom-left-radius: inherit;
         border-bottom-right-radius: inherit;
       }
-      #image02 {
-        text-align: center;
-      }
-      #image02 .frame {
+      #image01 .frame {
         max-width: 100%;
         width: auto;
         transition: none;
       }
-      #image02 img {
+      #image01 .frame img {
+        transition: none;
+      }
+      #image03 .frame {
+        width: 16.875rem;
+        transition: transform 0.25s ease, z-index 0.25s ease;
+      }
+      #image03 .frame:hover {
+        transform: scale(1.1125);
+        z-index: 1;
+      }
+      #image02:not(:first-child) {
+        margin-top: 2.25rem !important;
+      }
+      #image02:not(:last-child) {
+        margin-bottom: 2.25rem !important;
+      }
+      #image02 .frame {
+        width: 100vw;
+        transition: transform 0.25s ease, z-index 0.25s ease;
+      }
+      #image02 .frame:hover {
+        transform: scale(1.1125);
+        z-index: 1;
+      }
+      #image07 .frame {
+        max-width: 100%;
+        width: 190px;
+        transition: none;
+      }
+      #image07 img {
         height: 100% !important;
         object-fit: cover;
         object-position: center;
         width: 100% !important;
       }
-      #image02 .frame img {
+      #image07 .frame img {
         transition: none;
+      }
+      #image04:not(:first-child) {
+        margin-top: 2.25rem !important;
+      }
+      #image04:not(:last-child) {
+        margin-bottom: 2.25rem !important;
       }
       #image04 .frame {
         width: 100vw;
@@ -484,64 +517,29 @@
         transform: scale(1.1125);
         z-index: 1;
       }
-      #image03 .frame {
-        width: 15.5rem;
-        height: 31.75rem;
-        transition: transform 0.25s ease, z-index 0.25s ease;
-      }
-      #image03 img {
-        height: 100% !important;
-        object-fit: cover;
-        object-position: center;
-        width: 100% !important;
-      }
-      #image03 .frame:hover {
-        transform: scale(1.1125);
-        z-index: 1;
-      }
-      #image08 .frame {
-        max-width: 100%;
-        width: 186px;
-        transition: none;
-      }
-      #image08 img {
-        height: 100% !important;
-        object-fit: cover;
-        object-position: center;
-        width: 100% !important;
-      }
-      #image08 .frame img {
-        transition: none;
-      }
-      #image01:not(:first-child) {
-        margin-top: 4.375rem !important;
-      }
-      #image01:not(:last-child) {
-        margin-bottom: 4.375rem !important;
-      }
-      #image01 .frame {
-        width: 6.625rem;
-        transition: transform 0.25s ease, z-index 0.25s ease;
-      }
-      #image01 .frame:hover {
-        transform: scale(1.1125);
-        z-index: 1;
-      }
-      #image07 .frame {
-        width: 100vw;
-        transition: transform 0.25s ease, z-index 0.25s ease;
-      }
-      #image07 .frame:hover {
-        transform: scale(1.1125);
-        z-index: 1;
-      }
       #image05 .frame {
-        width: 14.875rem;
+        width: 14.5rem;
         transition: transform 0.25s ease, z-index 0.25s ease;
       }
       #image05 .frame:hover {
         transform: scale(1.1125);
         z-index: 1;
+      }
+      #image08 {
+        text-align: center;
+      }
+      #image08:not(:first-child) {
+        margin-top: 2.25rem !important;
+      }
+      #image08:not(:last-child) {
+        margin-bottom: 2.25rem !important;
+      }
+      #image08 .frame {
+        width: 6rem;
+        transition: none;
+      }
+      #image08 .frame img {
+        transition: none;
       }
       h1,
       h2,
@@ -583,15 +581,29 @@
       p spoiler-text {
         -webkit-text-fill-color: currentcolor;
       }
-      #text02 {
+      #text01 {
         text-transform: uppercase;
         color: #ffffff;
         font-family: "JetBrains Mono", monospace;
-        letter-spacing: -0.025rem;
-        width: 100%;
         font-size: 0.625em;
         line-height: 1.5;
-        font-weight: 300;
+        font-weight: 400;
+      }
+      #text01 a {
+        text-decoration: underline;
+      }
+      #text01 a:hover {
+        text-decoration: none;
+      }
+      #text01 span.p:nth-child(n + 2) {
+        margin-top: 1rem;
+      }
+      #text02 {
+        color: #b40d0d;
+        font-family: "JetBrains Mono", monospace;
+        font-size: 2em;
+        line-height: 1.5;
+        font-weight: 800;
       }
       #text02 a {
         text-decoration: underline;
@@ -602,27 +614,8 @@
       #text02 span.p:nth-child(n + 2) {
         margin-top: 1rem;
       }
-      #text05 {
-        text-align: left;
-        color: #b40d0d;
-        font-family: "JetBrains Mono", monospace;
-        letter-spacing: -0.05rem;
-        width: 100%;
-        font-size: 2em;
-        line-height: 1.375;
-        font-weight: 800;
-      }
-      #text05 a {
-        text-decoration: underline;
-      }
-      #text05 a:hover {
-        text-decoration: none;
-      }
-      #text05 span.p:nth-child(n + 2) {
-        margin-top: 1rem;
-      }
-      #text04 {
-        text-align: left;
+      #text03 {
+        text-align: center;
         color: #ffffff;
         font-family: "JetBrains Mono", monospace;
         letter-spacing: -0.05rem;
@@ -630,6 +623,22 @@
         font-size: 0.625em;
         line-height: 1.375;
         font-weight: 300;
+      }
+      #text03 a {
+        text-decoration: underline;
+      }
+      #text03 a:hover {
+        text-decoration: none;
+      }
+      #text03 span.p:nth-child(n + 2) {
+        margin-top: 1rem;
+      }
+      #text04 {
+        color: #b40d0d;
+        font-family: "JetBrains Mono", monospace;
+        font-size: 2em;
+        line-height: 1.5;
+        font-weight: 800;
       }
       #text04 a {
         text-decoration: underline;
@@ -640,11 +649,47 @@
       #text04 span.p:nth-child(n + 2) {
         margin-top: 1rem;
       }
+      #text06 {
+        text-align: left;
+        color: #b40d0d;
+        font-family: "JetBrains Mono", monospace;
+        letter-spacing: -0.05rem;
+        width: 100%;
+        font-size: 2em;
+        line-height: 1.375;
+        font-weight: 800;
+      }
+      #text06 a {
+        text-decoration: underline;
+      }
+      #text06 a:hover {
+        text-decoration: none;
+      }
+      #text06 span.p:nth-child(n + 2) {
+        margin-top: 1rem;
+      }
+      #text05 {
+        text-align: center;
+        color: #ffffff;
+        font-family: "JetBrains Mono", monospace;
+        letter-spacing: -0.05rem;
+        width: 100%;
+        font-size: 0.625em;
+        line-height: 1.375;
+        font-weight: 300;
+      }
+      #text05 a {
+        text-decoration: underline;
+      }
+      #text05 a:hover {
+        text-decoration: none;
+      }
+      #text05 span.p:nth-child(n + 2) {
+        margin-top: 1rem;
+      }
       #text09 {
         color: #b40d0d;
         font-family: "JetBrains Mono", monospace;
-        letter-spacing: -0.025rem;
-        width: 100%;
         font-size: 2em;
         line-height: 1.5;
         font-weight: 800;
@@ -658,57 +703,12 @@
       #text09 span.p:nth-child(n + 2) {
         margin-top: 1rem;
       }
-      #text08:not(:first-child) {
-        margin-top: 0.125rem !important;
-      }
-      #text08:not(:last-child) {
-        margin-bottom: 0.125rem !important;
-      }
-      #text08 {
-        text-align: center;
+      #text10 {
         color: #ffffff;
         font-family: "JetBrains Mono", monospace;
-        letter-spacing: -0.05rem;
-        width: 100%;
         font-size: 0.625em;
-        line-height: 1.375;
+        line-height: 1.5;
         font-weight: 300;
-      }
-      #text08 a {
-        text-decoration: underline;
-      }
-      #text08 a:hover {
-        text-decoration: none;
-      }
-      #text08 span.p:nth-child(n + 2) {
-        margin-top: 1rem;
-      }
-      #text03 {
-        color: #b40d0d;
-        font-family: "JetBrains Mono", monospace;
-        letter-spacing: -0.025rem;
-        width: 100%;
-        font-size: 2em;
-        line-height: 1.5;
-        font-weight: 800;
-      }
-      #text03 a {
-        text-decoration: underline;
-      }
-      #text03 a:hover {
-        text-decoration: none;
-      }
-      #text03 span.p:nth-child(n + 2) {
-        margin-top: 1rem;
-      }
-      #text10 {
-        color: #b40d0d;
-        font-family: "JetBrains Mono", monospace;
-        letter-spacing: -0.025rem;
-        width: 100%;
-        font-size: 2em;
-        line-height: 1.5;
-        font-weight: 800;
       }
       #text10 a {
         text-decoration: underline;
@@ -719,33 +719,34 @@
       #text10 span.p:nth-child(n + 2) {
         margin-top: 1rem;
       }
-      #text11 {
-        text-align: center;
+      #text08 {
+        text-align: left;
+        color: #b40d0d;
+        font-family: "JetBrains Mono", monospace;
+        letter-spacing: -0.05rem;
+        width: 100%;
+        font-size: 2em;
+        line-height: 1.375;
+        font-weight: 800;
+      }
+      #text08 a {
+        text-decoration: underline;
+      }
+      #text08 a:hover {
+        text-decoration: none;
+      }
+      #text08 span.p:nth-child(n + 2) {
+        margin-top: 1rem;
+      }
+      #text07 {
+        text-align: left;
         color: #ffffff;
         font-family: "JetBrains Mono", monospace;
-        letter-spacing: -0.025rem;
+        letter-spacing: -0.05rem;
         width: 100%;
         font-size: 0.625em;
         line-height: 1.375;
         font-weight: 300;
-      }
-      #text11 a {
-        text-decoration: underline;
-      }
-      #text11 a:hover {
-        text-decoration: none;
-      }
-      #text11 span.p:nth-child(n + 2) {
-        margin-top: 0.5rem;
-      }
-      #text07 {
-        color: #b40d0d;
-        font-family: "JetBrains Mono", monospace;
-        letter-spacing: -0.025rem;
-        width: 100%;
-        font-size: 2em;
-        line-height: 1.5;
-        font-weight: 800;
       }
       #text07 a {
         text-decoration: underline;
@@ -756,23 +757,151 @@
       #text07 span.p:nth-child(n + 2) {
         margin-top: 1rem;
       }
-      #text06 {
-        color: #ffffff;
-        font-family: "JetBrains Mono", monospace;
-        letter-spacing: -0.025rem;
+      .video {
+        position: relative;
+      }
+      .video video {
+        display: inline-block;
+        max-width: 100%;
+        vertical-align: top;
+      }
+      .video .frame {
+        display: inline-block;
+        max-width: 100%;
+        overflow: hidden;
+        position: relative;
+        vertical-align: top;
+      }
+      .video .frame:before {
+        content: "";
+        display: block;
         width: 100%;
-        font-size: 0.625em;
-        line-height: 1.5;
-        font-weight: 300;
       }
-      #text06 a {
-        text-decoration: underline;
+      .video .frame iframe {
+        bottom: 0px;
+        height: 100%;
+        left: 0px;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        width: 100%;
+        background-color: #000000;
       }
-      #text06 a:hover {
-        text-decoration: none;
+      .video.full video {
+        display: block;
       }
-      #text06 span.p:nth-child(n + 2) {
-        margin-top: 1rem;
+      .video.full:first-child video {
+        border-top-left-radius: inherit;
+        border-top-right-radius: inherit;
+      }
+      .video.full:last-child video {
+        border-bottom-left-radius: inherit;
+        border-bottom-right-radius: inherit;
+      }
+      .video.full .frame {
+        display: block;
+      }
+      .video.full:first-child .frame {
+        border-top-left-radius: inherit;
+        border-top-right-radius: inherit;
+      }
+      .video.full:last-child .frame {
+        border-bottom-left-radius: inherit;
+        border-bottom-right-radius: inherit;
+      }
+      #video01 video {
+        width: 45rem;
+      }
+      #video01 .frame {
+        width: 45rem;
+      }
+      #video01 .frame:before {
+        padding-top: 56.25%;
+      }
+      .gallery .inner {
+        display: inline-block;
+        max-width: 100%;
+        vertical-align: middle;
+      }
+      .gallery ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: var(--flex-alignment);
+      }
+      .gallery ul li {
+        position: relative;
+      }
+      .gallery ul li .thumbnail {
+        border-radius: inherit;
+        position: relative;
+      }
+      .gallery ul li .frame {
+        backface-visibility: hidden;
+        transform: translate3d(0, 0, 0);
+        -webkit-backface-visibility: hidden;
+        -webkit-transform: translate3d(0, 0, 0);
+        display: inline-block;
+        overflow: hidden;
+        vertical-align: top;
+      }
+      .gallery ul li img {
+        margin: 0;
+        max-width: 100%;
+        vertical-align: top;
+        width: auto;
+      }
+      .gallery ul li .caption {
+        width: 100%;
+      }
+      .gallery ul li .caption p {
+        width: 100%;
+      }
+      #gallery01 .inner {
+        max-width: 100%;
+        width: 100%;
+      }
+      #gallery01 ul li {
+        border-radius: 0rem;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        flex-shrink: 1;
+      }
+      #gallery01 ul li .frame {
+        border-radius: 0rem;
+        display: flex;
+        flex-grow: 1;
+        flex-shrink: 1;
+      }
+      #gallery01 ul {
+        gap: 0rem;
+      }
+      #gallery01 ul li img {
+        display: block;
+        flex-grow: 1;
+        flex-shrink: 1;
+        height: 10.125rem;
+        object-fit: cover;
+        object-position: center;
+      }
+      #gallery01 ul li .thumbnail {
+        transition: transform 0.25s ease, z-index 0.25s ease;
+      }
+      #gallery01 ul li .thumbnail:hover {
+        transform: scale(1.1125);
+        z-index: 1;
+      }
+      #gallery01 ul li .n01 img {
+        object-position: center;
+      }
+      #gallery01 ul li .n02 img {
+        object-position: center;
+      }
+      #gallery01 ul li .n03 img {
+        object-position: center;
+      }
+      #gallery01 ul li .n04 img {
+        object-position: center;
       }
       .container {
         position: relative;
@@ -806,145 +935,11 @@
         border-bottom-left-radius: inherit;
         border-bottom-right-radius: inherit;
       }
-      #container05 {
+      #container01 {
         display: flex;
         width: 100%;
         align-items: center;
         justify-content: center;
-        background-color: transparent;
-      }
-      #container05 > .wrapper > .inner {
-        --gutters: 2rem;
-        --padding-vertical: 0rem;
-        padding: var(--padding-vertical) var(--padding-horizontal);
-      }
-      #container05 > .wrapper {
-        max-width: 100%;
-        width: 100%;
-      }
-      #container05.default > .wrapper > .inner > * {
-        margin-bottom: var(--spacing);
-        margin-top: var(--spacing);
-      }
-      #container05.default > .wrapper > .inner > *:first-child {
-        margin-top: 0 !important;
-      }
-      #container05.default > .wrapper > .inner > *:last-child {
-        margin-bottom: 0 !important;
-      }
-      #container05.columns > .wrapper > .inner {
-        flex-wrap: wrap;
-        display: flex;
-        align-items: flex-start;
-      }
-      #container05.columns > .wrapper > .inner > * {
-        flex-grow: 0;
-        flex-shrink: 0;
-        max-width: 100%;
-        text-align: var(--alignment);
-        padding: 0 0 0 var(--gutters);
-      }
-      #container05.columns > .wrapper > .inner > * > * {
-        margin-bottom: var(--spacing);
-        margin-top: var(--spacing);
-      }
-      #container05.columns > .wrapper > .inner > * > *:first-child {
-        margin-top: 0 !important;
-      }
-      #container05.columns > .wrapper > .inner > * > *:last-child {
-        margin-bottom: 0 !important;
-      }
-      #container05.columns > .wrapper > .inner > *:first-child {
-        margin-left: calc(var(--gutters) * -1);
-      }
-      #container05.default > .wrapper > .inner > .full {
-        margin-left: calc(var(--padding-horizontal) * -1);
-        max-width: none !important;
-        width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
-      }
-      #container05.default > .wrapper > .inner > .full:first-child {
-        margin-top: calc(var(--padding-vertical) * -1) !important;
-        border-top-left-radius: inherit;
-        border-top-right-radius: inherit;
-      }
-      #container05.default > .wrapper > .inner > .full:last-child {
-        margin-bottom: calc(var(--padding-vertical) * -1) !important;
-        border-bottom-left-radius: inherit;
-        border-bottom-right-radius: inherit;
-      }
-      #container05.columns > .wrapper > .inner > div > .full {
-        margin-left: calc(var(--gutters) * -0.5);
-        max-width: none !important;
-        width: calc(100% + var(--gutters) + 0.4725px);
-      }
-      #container05.columns > .wrapper > .inner > div:first-child > .full {
-        margin-left: calc(var(--padding-horizontal) * -1);
-        width: calc(
-          100% + var(--padding-horizontal) + calc(var(--gutters) * 0.5) +
-            0.4725px
-        );
-      }
-      #container05.columns > .wrapper > .inner > div:last-child > .full {
-        width: calc(
-          100% + var(--padding-horizontal) + calc(var(--gutters) * 0.5) +
-            0.4725px
-        );
-      }
-      #container05.columns > .wrapper > .inner > div > .full:first-child {
-        margin-top: calc(var(--padding-vertical) * -1) !important;
-      }
-      #container05.columns > .wrapper > .inner > div > .full:last-child {
-        margin-bottom: calc(var(--padding-vertical) * -1) !important;
-      }
-      #container05.columns > .wrapper > .inner > div:first-child,
-      #container05.columns
-        > .wrapper
-        > .inner
-        > div:first-child
-        > .full:first-child {
-        border-top-left-radius: inherit;
-      }
-      #container05.columns > .wrapper > .inner > div:last-child,
-      #container05.columns
-        > .wrapper
-        > .inner
-        > div:last-child
-        > .full:first-child {
-        border-top-right-radius: inherit;
-      }
-      #container05.columns > .wrapper > .inner > .full {
-        align-self: stretch;
-      }
-      #container05.columns > .wrapper > .inner > .full:first-child {
-        border-bottom-left-radius: inherit;
-        border-top-left-radius: inherit;
-      }
-      #container05.columns > .wrapper > .inner > .full:last-child {
-        border-bottom-right-radius: inherit;
-        border-top-right-radius: inherit;
-      }
-      #container05.columns
-        > .wrapper
-        > .inner
-        > .full
-        > .full:first-child:last-child {
-        border-radius: inherit;
-        height: calc(100% + (var(--padding-vertical) * 2));
-      }
-      #container05.columns
-        > .wrapper
-        > .inner
-        > .full
-        > .full:first-child:last-child
-        > * {
-        border-radius: inherit;
-        height: 100%;
-        position: absolute;
-        width: 100%;
-      }
-      #container01 > .wrapper {
-        display: inline-block;
-        width: 75rem;
         background-color: transparent;
       }
       #container01 > .wrapper > .inner {
@@ -952,6 +947,10 @@
         --padding-horizontal: 2rem;
         --padding-vertical: 2rem;
         padding: var(--padding-vertical) var(--padding-horizontal);
+      }
+      #container01 > .wrapper {
+        max-width: var(--width);
+        width: 100%;
       }
       #container01.default > .wrapper > .inner > * {
         margin-bottom: var(--spacing);
@@ -1073,124 +1072,131 @@
         position: absolute;
         width: 100%;
       }
-      #container07 {
+      #container01 > .wrapper > .inner > :nth-child(1) {
+        width: calc(50% + (var(--gutters) / 2));
+      }
+      #container01 > .wrapper > .inner > :nth-child(2) {
+        width: calc(50% + (var(--gutters) / 2));
+      }
+      #container02 {
         display: flex;
         width: 100%;
         align-items: center;
         justify-content: center;
         background-color: transparent;
       }
-      #container07 > .wrapper > .inner {
+      #container02 > .wrapper > .inner {
         --gutters: 2rem;
+        --padding-horizontal: 2rem;
         --padding-vertical: 2rem;
         padding: var(--padding-vertical) var(--padding-horizontal);
       }
-      #container07 > .wrapper {
-        max-width: 100%;
+      #container02 > .wrapper {
+        max-width: var(--width);
         width: 100%;
       }
-      #container07.default > .wrapper > .inner > * {
+      #container02.default > .wrapper > .inner > * {
         margin-bottom: var(--spacing);
         margin-top: var(--spacing);
       }
-      #container07.default > .wrapper > .inner > *:first-child {
+      #container02.default > .wrapper > .inner > *:first-child {
         margin-top: 0 !important;
       }
-      #container07.default > .wrapper > .inner > *:last-child {
+      #container02.default > .wrapper > .inner > *:last-child {
         margin-bottom: 0 !important;
       }
-      #container07.columns > .wrapper > .inner {
+      #container02.columns > .wrapper > .inner {
         flex-wrap: wrap;
         display: flex;
         align-items: flex-start;
       }
-      #container07.columns > .wrapper > .inner > * {
+      #container02.columns > .wrapper > .inner > * {
         flex-grow: 0;
         flex-shrink: 0;
         max-width: 100%;
         text-align: var(--alignment);
         padding: 0 0 0 var(--gutters);
       }
-      #container07.columns > .wrapper > .inner > * > * {
+      #container02.columns > .wrapper > .inner > * > * {
         margin-bottom: var(--spacing);
         margin-top: var(--spacing);
       }
-      #container07.columns > .wrapper > .inner > * > *:first-child {
+      #container02.columns > .wrapper > .inner > * > *:first-child {
         margin-top: 0 !important;
       }
-      #container07.columns > .wrapper > .inner > * > *:last-child {
+      #container02.columns > .wrapper > .inner > * > *:last-child {
         margin-bottom: 0 !important;
       }
-      #container07.columns > .wrapper > .inner > *:first-child {
+      #container02.columns > .wrapper > .inner > *:first-child {
         margin-left: calc(var(--gutters) * -1);
       }
-      #container07.default > .wrapper > .inner > .full {
+      #container02.default > .wrapper > .inner > .full {
         margin-left: calc(var(--padding-horizontal) * -1);
         max-width: none !important;
         width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
       }
-      #container07.default > .wrapper > .inner > .full:first-child {
+      #container02.default > .wrapper > .inner > .full:first-child {
         margin-top: calc(var(--padding-vertical) * -1) !important;
         border-top-left-radius: inherit;
         border-top-right-radius: inherit;
       }
-      #container07.default > .wrapper > .inner > .full:last-child {
+      #container02.default > .wrapper > .inner > .full:last-child {
         margin-bottom: calc(var(--padding-vertical) * -1) !important;
         border-bottom-left-radius: inherit;
         border-bottom-right-radius: inherit;
       }
-      #container07.columns > .wrapper > .inner > div > .full {
+      #container02.columns > .wrapper > .inner > div > .full {
         margin-left: calc(var(--gutters) * -0.5);
         max-width: none !important;
         width: calc(100% + var(--gutters) + 0.4725px);
       }
-      #container07.columns > .wrapper > .inner > div:first-child > .full {
+      #container02.columns > .wrapper > .inner > div:first-child > .full {
         margin-left: calc(var(--padding-horizontal) * -1);
         width: calc(
           100% + var(--padding-horizontal) + calc(var(--gutters) * 0.5) +
             0.4725px
         );
       }
-      #container07.columns > .wrapper > .inner > div:last-child > .full {
+      #container02.columns > .wrapper > .inner > div:last-child > .full {
         width: calc(
           100% + var(--padding-horizontal) + calc(var(--gutters) * 0.5) +
             0.4725px
         );
       }
-      #container07.columns > .wrapper > .inner > div > .full:first-child {
+      #container02.columns > .wrapper > .inner > div > .full:first-child {
         margin-top: calc(var(--padding-vertical) * -1) !important;
       }
-      #container07.columns > .wrapper > .inner > div > .full:last-child {
+      #container02.columns > .wrapper > .inner > div > .full:last-child {
         margin-bottom: calc(var(--padding-vertical) * -1) !important;
       }
-      #container07.columns > .wrapper > .inner > div:first-child,
-      #container07.columns
+      #container02.columns > .wrapper > .inner > div:first-child,
+      #container02.columns
         > .wrapper
         > .inner
         > div:first-child
         > .full:first-child {
         border-top-left-radius: inherit;
       }
-      #container07.columns > .wrapper > .inner > div:last-child,
-      #container07.columns
+      #container02.columns > .wrapper > .inner > div:last-child,
+      #container02.columns
         > .wrapper
         > .inner
         > div:last-child
         > .full:first-child {
         border-top-right-radius: inherit;
       }
-      #container07.columns > .wrapper > .inner > .full {
+      #container02.columns > .wrapper > .inner > .full {
         align-self: stretch;
       }
-      #container07.columns > .wrapper > .inner > .full:first-child {
+      #container02.columns > .wrapper > .inner > .full:first-child {
         border-bottom-left-radius: inherit;
         border-top-left-radius: inherit;
       }
-      #container07.columns > .wrapper > .inner > .full:last-child {
+      #container02.columns > .wrapper > .inner > .full:last-child {
         border-bottom-right-radius: inherit;
         border-top-right-radius: inherit;
       }
-      #container07.columns
+      #container02.columns
         > .wrapper
         > .inner
         > .full
@@ -1198,7 +1204,7 @@
         border-radius: inherit;
         height: calc(100% + (var(--padding-vertical) * 2));
       }
-      #container07.columns
+      #container02.columns
         > .wrapper
         > .inner
         > .full
@@ -1209,571 +1215,11 @@
         position: absolute;
         width: 100%;
       }
-      #container04 {
-        display: flex;
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-        background-color: transparent;
-      }
-      #container04 > .wrapper > .inner {
-        --gutters: 2rem;
-        --padding-vertical: 2rem;
-        padding: var(--padding-vertical) var(--padding-horizontal);
-      }
-      #container04 > .wrapper {
-        max-width: 100%;
-        width: 100%;
-      }
-      #container04.default > .wrapper > .inner > * {
-        margin-bottom: var(--spacing);
-        margin-top: var(--spacing);
-      }
-      #container04.default > .wrapper > .inner > *:first-child {
-        margin-top: 0 !important;
-      }
-      #container04.default > .wrapper > .inner > *:last-child {
-        margin-bottom: 0 !important;
-      }
-      #container04.columns > .wrapper > .inner {
-        flex-wrap: wrap;
-        display: flex;
-        align-items: flex-start;
-      }
-      #container04.columns > .wrapper > .inner > * {
-        flex-grow: 0;
-        flex-shrink: 0;
-        max-width: 100%;
-        text-align: var(--alignment);
-        padding: 0 0 0 var(--gutters);
-      }
-      #container04.columns > .wrapper > .inner > * > * {
-        margin-bottom: var(--spacing);
-        margin-top: var(--spacing);
-      }
-      #container04.columns > .wrapper > .inner > * > *:first-child {
-        margin-top: 0 !important;
-      }
-      #container04.columns > .wrapper > .inner > * > *:last-child {
-        margin-bottom: 0 !important;
-      }
-      #container04.columns > .wrapper > .inner > *:first-child {
-        margin-left: calc(var(--gutters) * -1);
-      }
-      #container04.default > .wrapper > .inner > .full {
-        margin-left: calc(var(--padding-horizontal) * -1);
-        max-width: none !important;
-        width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
-      }
-      #container04.default > .wrapper > .inner > .full:first-child {
-        margin-top: calc(var(--padding-vertical) * -1) !important;
-        border-top-left-radius: inherit;
-        border-top-right-radius: inherit;
-      }
-      #container04.default > .wrapper > .inner > .full:last-child {
-        margin-bottom: calc(var(--padding-vertical) * -1) !important;
-        border-bottom-left-radius: inherit;
-        border-bottom-right-radius: inherit;
-      }
-      #container04.columns > .wrapper > .inner > div > .full {
-        margin-left: calc(var(--gutters) * -0.5);
-        max-width: none !important;
-        width: calc(100% + var(--gutters) + 0.4725px);
-      }
-      #container04.columns > .wrapper > .inner > div:first-child > .full {
-        margin-left: calc(var(--padding-horizontal) * -1);
-        width: calc(
-          100% + var(--padding-horizontal) + calc(var(--gutters) * 0.5) +
-            0.4725px
-        );
-      }
-      #container04.columns > .wrapper > .inner > div:last-child > .full {
-        width: calc(
-          100% + var(--padding-horizontal) + calc(var(--gutters) * 0.5) +
-            0.4725px
-        );
-      }
-      #container04.columns > .wrapper > .inner > div > .full:first-child {
-        margin-top: calc(var(--padding-vertical) * -1) !important;
-      }
-      #container04.columns > .wrapper > .inner > div > .full:last-child {
-        margin-bottom: calc(var(--padding-vertical) * -1) !important;
-      }
-      #container04.columns > .wrapper > .inner > div:first-child,
-      #container04.columns
-        > .wrapper
-        > .inner
-        > div:first-child
-        > .full:first-child {
-        border-top-left-radius: inherit;
-      }
-      #container04.columns > .wrapper > .inner > div:last-child,
-      #container04.columns
-        > .wrapper
-        > .inner
-        > div:last-child
-        > .full:first-child {
-        border-top-right-radius: inherit;
-      }
-      #container04.columns > .wrapper > .inner > .full {
-        align-self: stretch;
-      }
-      #container04.columns > .wrapper > .inner > .full:first-child {
-        border-bottom-left-radius: inherit;
-        border-top-left-radius: inherit;
-      }
-      #container04.columns > .wrapper > .inner > .full:last-child {
-        border-bottom-right-radius: inherit;
-        border-top-right-radius: inherit;
-      }
-      #container04.columns
-        > .wrapper
-        > .inner
-        > .full
-        > .full:first-child:last-child {
-        border-radius: inherit;
-        height: calc(100% + (var(--padding-vertical) * 2));
-      }
-      #container04.columns
-        > .wrapper
-        > .inner
-        > .full
-        > .full:first-child:last-child
-        > * {
-        border-radius: inherit;
-        height: 100%;
-        position: absolute;
-        width: 100%;
-      }
-      #container04 > .wrapper > .inner > :nth-child(1) {
+      #container02 > .wrapper > .inner > :nth-child(1) {
         width: calc(50% + (var(--gutters) / 2));
       }
-      #container04 > .wrapper > .inner > :nth-child(2) {
+      #container02 > .wrapper > .inner > :nth-child(2) {
         width: calc(50% + (var(--gutters) / 2));
-      }
-      #container03 {
-        display: flex;
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-        background-color: transparent;
-      }
-      #container03 > .wrapper > .inner {
-        --gutters: 2rem;
-        --padding-vertical: 2rem;
-        padding: var(--padding-vertical) var(--padding-horizontal);
-      }
-      #container03 > .wrapper {
-        max-width: 100%;
-        width: 100%;
-      }
-      #container03.default > .wrapper > .inner > * {
-        margin-bottom: var(--spacing);
-        margin-top: var(--spacing);
-      }
-      #container03.default > .wrapper > .inner > *:first-child {
-        margin-top: 0 !important;
-      }
-      #container03.default > .wrapper > .inner > *:last-child {
-        margin-bottom: 0 !important;
-      }
-      #container03.columns > .wrapper > .inner {
-        flex-wrap: wrap;
-        display: flex;
-        align-items: flex-start;
-      }
-      #container03.columns > .wrapper > .inner > * {
-        flex-grow: 0;
-        flex-shrink: 0;
-        max-width: 100%;
-        text-align: var(--alignment);
-        padding: 0 0 0 var(--gutters);
-      }
-      #container03.columns > .wrapper > .inner > * > * {
-        margin-bottom: var(--spacing);
-        margin-top: var(--spacing);
-      }
-      #container03.columns > .wrapper > .inner > * > *:first-child {
-        margin-top: 0 !important;
-      }
-      #container03.columns > .wrapper > .inner > * > *:last-child {
-        margin-bottom: 0 !important;
-      }
-      #container03.columns > .wrapper > .inner > *:first-child {
-        margin-left: calc(var(--gutters) * -1);
-      }
-      #container03.default > .wrapper > .inner > .full {
-        margin-left: calc(var(--padding-horizontal) * -1);
-        max-width: none !important;
-        width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
-      }
-      #container03.default > .wrapper > .inner > .full:first-child {
-        margin-top: calc(var(--padding-vertical) * -1) !important;
-        border-top-left-radius: inherit;
-        border-top-right-radius: inherit;
-      }
-      #container03.default > .wrapper > .inner > .full:last-child {
-        margin-bottom: calc(var(--padding-vertical) * -1) !important;
-        border-bottom-left-radius: inherit;
-        border-bottom-right-radius: inherit;
-      }
-      #container03.columns > .wrapper > .inner > div > .full {
-        margin-left: calc(var(--gutters) * -0.5);
-        max-width: none !important;
-        width: calc(100% + var(--gutters) + 0.4725px);
-      }
-      #container03.columns > .wrapper > .inner > div:first-child > .full {
-        margin-left: calc(var(--padding-horizontal) * -1);
-        width: calc(
-          100% + var(--padding-horizontal) + calc(var(--gutters) * 0.5) +
-            0.4725px
-        );
-      }
-      #container03.columns > .wrapper > .inner > div:last-child > .full {
-        width: calc(
-          100% + var(--padding-horizontal) + calc(var(--gutters) * 0.5) +
-            0.4725px
-        );
-      }
-      #container03.columns > .wrapper > .inner > div > .full:first-child {
-        margin-top: calc(var(--padding-vertical) * -1) !important;
-      }
-      #container03.columns > .wrapper > .inner > div > .full:last-child {
-        margin-bottom: calc(var(--padding-vertical) * -1) !important;
-      }
-      #container03.columns > .wrapper > .inner > div:first-child,
-      #container03.columns
-        > .wrapper
-        > .inner
-        > div:first-child
-        > .full:first-child {
-        border-top-left-radius: inherit;
-      }
-      #container03.columns > .wrapper > .inner > div:last-child,
-      #container03.columns
-        > .wrapper
-        > .inner
-        > div:last-child
-        > .full:first-child {
-        border-top-right-radius: inherit;
-      }
-      #container03.columns > .wrapper > .inner > .full {
-        align-self: stretch;
-      }
-      #container03.columns > .wrapper > .inner > .full:first-child {
-        border-bottom-left-radius: inherit;
-        border-top-left-radius: inherit;
-      }
-      #container03.columns > .wrapper > .inner > .full:last-child {
-        border-bottom-right-radius: inherit;
-        border-top-right-radius: inherit;
-      }
-      #container03.columns
-        > .wrapper
-        > .inner
-        > .full
-        > .full:first-child:last-child {
-        border-radius: inherit;
-        height: calc(100% + (var(--padding-vertical) * 2));
-      }
-      #container03.columns
-        > .wrapper
-        > .inner
-        > .full
-        > .full:first-child:last-child
-        > * {
-        border-radius: inherit;
-        height: 100%;
-        position: absolute;
-        width: 100%;
-      }
-      #container03 > .wrapper > .inner > :nth-child(1) {
-        width: calc(50% + (var(--gutters) / 2));
-      }
-      #container03 > .wrapper > .inner > :nth-child(2) {
-        width: calc(50% + (var(--gutters) / 2));
-      }
-      #container06 {
-        display: flex;
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-        background-color: transparent;
-      }
-      #container06 > .wrapper > .inner {
-        --gutters: 2rem;
-        --padding-vertical: 2rem;
-        padding: var(--padding-vertical) var(--padding-horizontal);
-      }
-      #container06 > .wrapper {
-        max-width: 100%;
-        width: 100%;
-      }
-      #container06.default > .wrapper > .inner > * {
-        margin-bottom: var(--spacing);
-        margin-top: var(--spacing);
-      }
-      #container06.default > .wrapper > .inner > *:first-child {
-        margin-top: 0 !important;
-      }
-      #container06.default > .wrapper > .inner > *:last-child {
-        margin-bottom: 0 !important;
-      }
-      #container06.columns > .wrapper > .inner {
-        flex-wrap: wrap;
-        display: flex;
-        align-items: flex-start;
-      }
-      #container06.columns > .wrapper > .inner > * {
-        flex-grow: 0;
-        flex-shrink: 0;
-        max-width: 100%;
-        text-align: var(--alignment);
-        padding: 0 0 0 var(--gutters);
-      }
-      #container06.columns > .wrapper > .inner > * > * {
-        margin-bottom: var(--spacing);
-        margin-top: var(--spacing);
-      }
-      #container06.columns > .wrapper > .inner > * > *:first-child {
-        margin-top: 0 !important;
-      }
-      #container06.columns > .wrapper > .inner > * > *:last-child {
-        margin-bottom: 0 !important;
-      }
-      #container06.columns > .wrapper > .inner > *:first-child {
-        margin-left: calc(var(--gutters) * -1);
-      }
-      #container06.default > .wrapper > .inner > .full {
-        margin-left: calc(var(--padding-horizontal) * -1);
-        max-width: none !important;
-        width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
-      }
-      #container06.default > .wrapper > .inner > .full:first-child {
-        margin-top: calc(var(--padding-vertical) * -1) !important;
-        border-top-left-radius: inherit;
-        border-top-right-radius: inherit;
-      }
-      #container06.default > .wrapper > .inner > .full:last-child {
-        margin-bottom: calc(var(--padding-vertical) * -1) !important;
-        border-bottom-left-radius: inherit;
-        border-bottom-right-radius: inherit;
-      }
-      #container06.columns > .wrapper > .inner > div > .full {
-        margin-left: calc(var(--gutters) * -0.5);
-        max-width: none !important;
-        width: calc(100% + var(--gutters) + 0.4725px);
-      }
-      #container06.columns > .wrapper > .inner > div:first-child > .full {
-        margin-left: calc(var(--padding-horizontal) * -1);
-        width: calc(
-          100% + var(--padding-horizontal) + calc(var(--gutters) * 0.5) +
-            0.4725px
-        );
-      }
-      #container06.columns > .wrapper > .inner > div:last-child > .full {
-        width: calc(
-          100% + var(--padding-horizontal) + calc(var(--gutters) * 0.5) +
-            0.4725px
-        );
-      }
-      #container06.columns > .wrapper > .inner > div > .full:first-child {
-        margin-top: calc(var(--padding-vertical) * -1) !important;
-      }
-      #container06.columns > .wrapper > .inner > div > .full:last-child {
-        margin-bottom: calc(var(--padding-vertical) * -1) !important;
-      }
-      #container06.columns > .wrapper > .inner > div:first-child,
-      #container06.columns
-        > .wrapper
-        > .inner
-        > div:first-child
-        > .full:first-child {
-        border-top-left-radius: inherit;
-      }
-      #container06.columns > .wrapper > .inner > div:last-child,
-      #container06.columns
-        > .wrapper
-        > .inner
-        > div:last-child
-        > .full:first-child {
-        border-top-right-radius: inherit;
-      }
-      #container06.columns > .wrapper > .inner > .full {
-        align-self: stretch;
-      }
-      #container06.columns > .wrapper > .inner > .full:first-child {
-        border-bottom-left-radius: inherit;
-        border-top-left-radius: inherit;
-      }
-      #container06.columns > .wrapper > .inner > .full:last-child {
-        border-bottom-right-radius: inherit;
-        border-top-right-radius: inherit;
-      }
-      #container06.columns
-        > .wrapper
-        > .inner
-        > .full
-        > .full:first-child:last-child {
-        border-radius: inherit;
-        height: calc(100% + (var(--padding-vertical) * 2));
-      }
-      #container06.columns
-        > .wrapper
-        > .inner
-        > .full
-        > .full:first-child:last-child
-        > * {
-        border-radius: inherit;
-        height: 100%;
-        position: absolute;
-        width: 100%;
-      }
-      .video {
-        position: relative;
-      }
-      .video video {
-        display: inline-block;
-        max-width: 100%;
-        vertical-align: top;
-      }
-      .video .frame {
-        display: inline-block;
-        max-width: 100%;
-        overflow: hidden;
-        position: relative;
-        vertical-align: top;
-      }
-      .video .frame:before {
-        content: "";
-        display: block;
-        width: 100%;
-      }
-      .video .frame iframe {
-        bottom: 0px;
-        height: 100%;
-        left: 0px;
-        position: absolute;
-        right: 0px;
-        top: 0px;
-        width: 100%;
-        background-color: #000000;
-      }
-      .video.full video {
-        display: block;
-      }
-      .video.full:first-child video {
-        border-top-left-radius: inherit;
-        border-top-right-radius: inherit;
-      }
-      .video.full:last-child video {
-        border-bottom-left-radius: inherit;
-        border-bottom-right-radius: inherit;
-      }
-      .video.full .frame {
-        display: block;
-      }
-      .video.full:first-child .frame {
-        border-top-left-radius: inherit;
-        border-top-right-radius: inherit;
-      }
-      .video.full:last-child .frame {
-        border-bottom-left-radius: inherit;
-        border-bottom-right-radius: inherit;
-      }
-      #video02 video {
-        width: 45rem;
-      }
-      #video02 .frame {
-        width: 45rem;
-      }
-      #video02 .frame:before {
-        padding-top: 56.25%;
-      }
-      .gallery .inner {
-        display: inline-block;
-        max-width: 100%;
-        vertical-align: middle;
-      }
-      .gallery ul {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: var(--flex-alignment);
-      }
-      .gallery ul li {
-        position: relative;
-      }
-      .gallery ul li .thumbnail {
-        border-radius: inherit;
-        position: relative;
-      }
-      .gallery ul li .frame {
-        backface-visibility: hidden;
-        -webkit-backface-visibility: hidden;
-        transform: translate3d(0, 0, 0);
-        -webkit-transform: translate3d(0, 0, 0);
-        display: inline-block;
-        overflow: hidden;
-        vertical-align: top;
-      }
-      .gallery ul li img {
-        margin: 0;
-        max-width: 100%;
-        vertical-align: top;
-        width: auto;
-      }
-      .gallery ul li .caption {
-        width: 100%;
-      }
-      .gallery ul li .caption p {
-        width: 100%;
-      }
-      #gallery01 .inner {
-        max-width: 100%;
-        width: 100%;
-      }
-      #gallery01 ul li {
-        border-radius: 0rem;
-        display: flex;
-        flex-direction: column;
-        flex-grow: 1;
-        flex-shrink: 1;
-      }
-      #gallery01 ul li .frame {
-        border-radius: 0rem;
-        display: flex;
-        flex-grow: 1;
-        flex-shrink: 1;
-      }
-      #gallery01 ul {
-        gap: 0rem;
-      }
-      #gallery01 ul li img {
-        display: block;
-        flex-grow: 1;
-        flex-shrink: 1;
-        height: 10.125rem;
-        object-fit: cover;
-        object-position: center;
-      }
-      #gallery01 ul li .thumbnail {
-        transition: transform 0.25s ease, z-index 0.25s ease;
-      }
-      #gallery01 ul li .thumbnail:hover {
-        transform: scale(1.1125);
-        z-index: 1;
-      }
-      #gallery01 ul li .n01 img {
-        object-position: center;
-      }
-      #gallery01 ul li .n02 img {
-        object-position: center;
-      }
-      #gallery01 ul li .n03 img {
-        object-position: center;
-      }
-      #gallery01 ul li .n04 img {
-        object-position: center;
       }
       .icc-credits {
         display: block;
@@ -1873,37 +1319,25 @@
         }
         #main > .inner {
           --padding-horizontal: 2rem;
-          --padding-vertical: 3rem;
+          --padding-vertical: 0.375rem;
           --spacing: 0.75rem;
         }
-        #buttons02 {
+        #buttons01 {
           gap: 0.75rem;
         }
-        #buttons02 li a {
+        #buttons01 li a {
           letter-spacing: 0rem;
           font-size: 0.75em;
         }
-        #buttons02 li a svg {
+        #buttons01 li a svg {
           width: 1em;
         }
-        #image02 img {
-          height: 100% !important;
-          object-fit: cover;
-          object-position: center;
-          width: 100% !important;
-        }
-        #image04 .frame {
-          height: 20.9375rem !important;
-        }
-        #image04 img {
-          height: 100% !important;
-          object-fit: cover;
-          object-position: top;
-          width: 100% !important;
+        #image01 .frame {
+          width: 100vw;
         }
         #image03 .frame {
-          width: 15.5rem;
-          height: 25rem !important;
+          width: 14.25rem;
+          height: 23.4375rem !important;
         }
         #image03 img {
           height: 100% !important;
@@ -1911,33 +1345,27 @@
           object-position: top;
           width: 100% !important;
         }
-        #image08 img {
+        #image02:not(:first-child) {
+          margin-top: 2.5rem !important;
+        }
+        #image02:not(:last-child) {
+          margin-bottom: 2.5rem !important;
+        }
+        #image07 img {
           height: 100% !important;
           object-fit: cover;
           object-position: center;
           width: 100% !important;
         }
-        #image01:not(:first-child) {
-          margin-top: 2.625rem !important;
+        #image04:not(:first-child) {
+          margin-top: 2.5rem !important;
         }
-        #image01:not(:last-child) {
-          margin-bottom: 2.625rem !important;
-        }
-        #image01 .frame {
-          width: 6.625rem;
-        }
-        #image07 .frame {
-          height: 20.9375rem !important;
-        }
-        #image07 img {
-          height: 100% !important;
-          object-fit: cover;
-          object-position: top;
-          width: 100% !important;
+        #image04:not(:last-child) {
+          margin-bottom: 2.5rem !important;
         }
         #image05 .frame {
-          width: 12.75rem;
-          height: 20.9375rem !important;
+          width: 15rem;
+          height: 25rem !important;
         }
         #image05 img {
           height: 100% !important;
@@ -1945,178 +1373,86 @@
           object-position: top;
           width: 100% !important;
         }
-        #text02 {
-          letter-spacing: -0.021875rem;
+        #image08:not(:first-child) {
+          margin-top: 2.5rem !important;
+        }
+        #image08:not(:last-child) {
+          margin-bottom: 2.5rem !important;
+        }
+        #image08 .frame {
+          width: 6.25rem;
+        }
+        #text01 {
+          letter-spacing: 0rem;
           width: 100%;
           font-size: 0.625em;
           line-height: 1.5;
         }
-        #text05 {
+        #text02 {
+          letter-spacing: 0rem;
+          width: 100%;
+          font-size: 2em;
+          line-height: 1.5;
+        }
+        #text03 {
+          letter-spacing: -0.04375rem;
+          width: 100%;
+          font-size: 0.625em;
+          line-height: 1.375;
+        }
+        #text04 {
+          letter-spacing: 0rem;
+          width: 100%;
+          font-size: 2em;
+          line-height: 1.5;
+        }
+        #text06 {
           letter-spacing: -0.04375rem;
           width: 100%;
           font-size: 2em;
           line-height: 1.375;
         }
-        #text04 {
+        #text05 {
           letter-spacing: -0.04375rem;
           width: 100%;
           font-size: 0.625em;
           line-height: 1.375;
         }
         #text09 {
-          letter-spacing: -0.021875rem;
-          width: 100%;
-          font-size: 2em;
-          line-height: 1.5;
-        }
-        #text08:not(:first-child) {
-          margin-top: 0.09375rem !important;
-        }
-        #text08:not(:last-child) {
-          margin-bottom: 0.09375rem !important;
-        }
-        #text08 {
-          letter-spacing: -0.04375rem;
-          width: 100%;
-          font-size: 0.625em;
-          line-height: 1.375;
-        }
-        #text03 {
-          letter-spacing: -0.021875rem;
+          letter-spacing: 0rem;
           width: 100%;
           font-size: 2em;
           line-height: 1.5;
         }
         #text10 {
-          letter-spacing: -0.021875rem;
+          letter-spacing: 0rem;
           width: 100%;
-          font-size: 2em;
+          font-size: 0.625em;
           line-height: 1.5;
         }
-        #text11 {
-          letter-spacing: -0.021875rem;
+        #text08 {
+          letter-spacing: -0.04375rem;
+          width: 100%;
+          font-size: 2em;
+          line-height: 1.375;
+        }
+        #text07 {
+          letter-spacing: -0.04375rem;
           width: 100%;
           font-size: 0.625em;
           line-height: 1.375;
         }
-        #text07 {
-          letter-spacing: -0.021875rem;
-          width: 100%;
-          font-size: 2em;
-          line-height: 1.5;
+        #video01 video {
+          width: 45rem;
         }
-        #text06 {
-          letter-spacing: -0.021875rem;
-          width: 100%;
-          font-size: 0.625em;
-          line-height: 1.5;
+        #video01 .frame {
+          width: 45rem;
         }
-        #container05 > .wrapper > .inner {
-          --gutters: 2rem;
-          --padding-vertical: 0rem;
+        #gallery01 ul li img {
+          height: 7.59375rem;
         }
-        #container05.columns > .wrapper > .inner {
-          flex-direction: column !important;
-          flex-wrap: nowrap !important;
-        }
-        #container05.columns > .wrapper > .inner > span {
-          height: 0;
-          margin-top: calc(var(--gutters) * -1);
-          pointer-events: none;
-          visibility: hidden;
-        }
-        #container05.columns > .wrapper > .inner > *:first-child {
-          margin-left: 0 !important;
-          padding-top: 0 !important;
-        }
-        #container05.columns > .wrapper > .inner > * {
-          padding: calc(var(--gutters) * 0.5) 0 !important;
-        }
-        #container05.columns > .wrapper > .inner > *:last-child {
-          padding-bottom: 0 !important;
-        }
-        #container05.columns > .wrapper > .inner > div > .full {
-          margin-left: calc(var(--padding-horizontal) * -1);
-          width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
-        }
-        #container05.columns > .wrapper > .inner > div:first-of-type > .full {
-          margin-left: calc(var(--padding-horizontal) * -1);
-          width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
-        }
-        #container05.columns > .wrapper > .inner > div:last-of-type > .full {
-          margin-left: calc(var(--padding-horizontal) * -1);
-          width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
-        }
-        #container05.columns > .wrapper > .inner > div > .full:first-child {
-          margin-top: calc(var(--gutters) * -0.5) !important;
-        }
-        #container05.columns > .wrapper > .inner > div > .full:last-child {
-          margin-bottom: calc(var(--gutters) * -0.5) !important;
-        }
-        #container05.columns
-          > .wrapper
-          > .inner
-          > div:first-of-type
-          > .full:first-child {
-          margin-top: calc(var(--padding-vertical) * -1) !important;
-        }
-        #container05.columns
-          > .wrapper
-          > .inner
-          > div:last-of-type
-          > .full:last-child {
-          margin-bottom: calc(var(--padding-vertical) * -1) !important;
-        }
-        #container05.columns > .wrapper > .inner > div:first-of-type,
-        #container05.columns
-          > .wrapper
-          > .inner
-          > div:first-of-type
-          > .full:first-child {
-          border-top-left-radius: inherit;
-          border-top-right-radius: inherit;
-        }
-        #container05.columns > .wrapper > .inner > div:last-of-type,
-        #container05.columns
-          > .wrapper
-          > .inner
-          > div:last-of-type
-          > .full:last-child {
-          border-bottom-left-radius: inherit;
-          border-bottom-right-radius: inherit;
-        }
-        #container05.columns > .wrapper > .inner > div:first-of-type,
-        #container05.columns
-          > .wrapper
-          > .inner
-          > div:first-of-type
-          > .full:last-child {
-          border-bottom-left-radius: 0 !important;
-        }
-        #container05.columns > .wrapper > .inner > div:last-of-type,
-        #container05.columns
-          > .wrapper
-          > .inner
-          > div:last-of-type
-          > .full:first-child {
-          border-top-right-radius: 0 !important;
-        }
-        #container05.columns
-          > .wrapper
-          > .inner
-          > .full
-          > .full:first-child:last-child {
-          height: auto;
-        }
-        #container05.columns
-          > .wrapper
-          > .inner
-          > .full
-          > .full:first-child:last-child
-          > * {
-          height: auto;
-          position: relative;
-          width: auto;
+        #container01:not(:first-child) {
+          margin-top: 0.25rem !important;
         }
         #container01 > .wrapper > .inner {
           --gutters: 2rem;
@@ -2226,64 +1562,73 @@
           position: relative;
           width: auto;
         }
-        #container07 > .wrapper > .inner {
+        #container01 > .wrapper > .inner > :nth-child(1) {
+          min-height: 100% !important;
+          width: 100% !important;
+        }
+        #container01 > .wrapper > .inner > :nth-child(2) {
+          min-height: 100% !important;
+          width: 100% !important;
+        }
+        #container02 > .wrapper > .inner {
           --gutters: 2rem;
+          --padding-horizontal: 2rem;
           --padding-vertical: 2rem;
         }
-        #container07.columns > .wrapper > .inner {
+        #container02.columns > .wrapper > .inner {
           flex-direction: column !important;
           flex-wrap: nowrap !important;
         }
-        #container07.columns > .wrapper > .inner > span {
+        #container02.columns > .wrapper > .inner > span {
           height: 0;
           margin-top: calc(var(--gutters) * -1);
           pointer-events: none;
           visibility: hidden;
         }
-        #container07.columns > .wrapper > .inner > *:first-child {
+        #container02.columns > .wrapper > .inner > *:first-child {
           margin-left: 0 !important;
           padding-top: 0 !important;
         }
-        #container07.columns > .wrapper > .inner > * {
+        #container02.columns > .wrapper > .inner > * {
           padding: calc(var(--gutters) * 0.5) 0 !important;
         }
-        #container07.columns > .wrapper > .inner > *:last-child {
+        #container02.columns > .wrapper > .inner > *:last-child {
           padding-bottom: 0 !important;
         }
-        #container07.columns > .wrapper > .inner > div > .full {
+        #container02.columns > .wrapper > .inner > div > .full {
           margin-left: calc(var(--padding-horizontal) * -1);
           width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
         }
-        #container07.columns > .wrapper > .inner > div:first-of-type > .full {
+        #container02.columns > .wrapper > .inner > div:first-of-type > .full {
           margin-left: calc(var(--padding-horizontal) * -1);
           width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
         }
-        #container07.columns > .wrapper > .inner > div:last-of-type > .full {
+        #container02.columns > .wrapper > .inner > div:last-of-type > .full {
           margin-left: calc(var(--padding-horizontal) * -1);
           width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
         }
-        #container07.columns > .wrapper > .inner > div > .full:first-child {
+        #container02.columns > .wrapper > .inner > div > .full:first-child {
           margin-top: calc(var(--gutters) * -0.5) !important;
         }
-        #container07.columns > .wrapper > .inner > div > .full:last-child {
+        #container02.columns > .wrapper > .inner > div > .full:last-child {
           margin-bottom: calc(var(--gutters) * -0.5) !important;
         }
-        #container07.columns
+        #container02.columns
           > .wrapper
           > .inner
           > div:first-of-type
           > .full:first-child {
           margin-top: calc(var(--padding-vertical) * -1) !important;
         }
-        #container07.columns
+        #container02.columns
           > .wrapper
           > .inner
           > div:last-of-type
           > .full:last-child {
           margin-bottom: calc(var(--padding-vertical) * -1) !important;
         }
-        #container07.columns > .wrapper > .inner > div:first-of-type,
-        #container07.columns
+        #container02.columns > .wrapper > .inner > div:first-of-type,
+        #container02.columns
           > .wrapper
           > .inner
           > div:first-of-type
@@ -2291,8 +1636,8 @@
           border-top-left-radius: inherit;
           border-top-right-radius: inherit;
         }
-        #container07.columns > .wrapper > .inner > div:last-of-type,
-        #container07.columns
+        #container02.columns > .wrapper > .inner > div:last-of-type,
+        #container02.columns
           > .wrapper
           > .inner
           > div:last-of-type
@@ -2300,30 +1645,30 @@
           border-bottom-left-radius: inherit;
           border-bottom-right-radius: inherit;
         }
-        #container07.columns > .wrapper > .inner > div:first-of-type,
-        #container07.columns
+        #container02.columns > .wrapper > .inner > div:first-of-type,
+        #container02.columns
           > .wrapper
           > .inner
           > div:first-of-type
           > .full:last-child {
           border-bottom-left-radius: 0 !important;
         }
-        #container07.columns > .wrapper > .inner > div:last-of-type,
-        #container07.columns
+        #container02.columns > .wrapper > .inner > div:last-of-type,
+        #container02.columns
           > .wrapper
           > .inner
           > div:last-of-type
           > .full:first-child {
           border-top-right-radius: 0 !important;
         }
-        #container07.columns
+        #container02.columns
           > .wrapper
           > .inner
           > .full
           > .full:first-child:last-child {
           height: auto;
         }
-        #container07.columns
+        #container02.columns
           > .wrapper
           > .inner
           > .full
@@ -2333,469 +1678,86 @@
           position: relative;
           width: auto;
         }
-        #container04 > .wrapper > .inner {
-          --gutters: 2rem;
-          --padding-vertical: 2rem;
-        }
-        #container04.columns > .wrapper > .inner {
-          flex-direction: column-reverse !important;
-          flex-wrap: nowrap !important;
-        }
-        #container04.columns > .wrapper > .inner > span {
-          height: 0;
-          margin-top: calc(var(--padding-vertical) * -2);
-          pointer-events: none;
-          visibility: hidden;
-        }
-        #container04.columns > .wrapper > .inner > *:first-child {
-          margin-left: 0 !important;
-          padding-bottom: 0 !important;
-        }
-        #container04.columns > .wrapper > .inner > * {
-          padding: calc(var(--gutters) * 0.5) 0 !important;
-        }
-        #container04.columns > .wrapper > .inner > *:last-child {
-          padding-top: 0 !important;
-        }
-        #container04.columns > .wrapper > .inner > div > .full {
-          margin-left: calc(var(--padding-horizontal) * -1);
-          width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
-        }
-        #container04.columns > .wrapper > .inner > div:first-of-type > .full {
-          margin-left: calc(var(--padding-horizontal) * -1);
-          width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
-        }
-        #container04.columns > .wrapper > .inner > div:last-of-type > .full {
-          margin-left: calc(var(--padding-horizontal) * -1);
-          width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
-        }
-        #container04.columns > .wrapper > .inner > div > .full:first-child {
-          margin-top: calc(var(--gutters) * -0.5) !important;
-        }
-        #container04.columns > .wrapper > .inner > div > .full:last-child {
-          margin-bottom: calc(var(--gutters) * -0.5) !important;
-        }
-        #container04.columns
-          > .wrapper
-          > .inner
-          > div:last-of-type
-          > .full:first-child {
-          margin-top: calc(var(--padding-vertical) * -1) !important;
-        }
-        #container04.columns
-          > .wrapper
-          > .inner
-          > div:first-of-type
-          > .full:last-child {
-          margin-bottom: calc(var(--padding-vertical) * -1) !important;
-        }
-        #container04.columns > .wrapper > .inner > div:last-of-type,
-        #container04.columns
-          > .wrapper
-          > .inner
-          > div:last-of-type
-          > .full:first-child {
-          border-top-left-radius: inherit;
-          border-top-right-radius: inherit;
-        }
-        #container04.columns > .wrapper > .inner > div:first-of-type,
-        #container04.columns
-          > .wrapper
-          > .inner
-          > div:first-of-type
-          > .full:last-child {
-          border-bottom-left-radius: inherit;
-          border-bottom-right-radius: inherit;
-        }
-        #container04.columns > .wrapper > .inner > div:last-of-type,
-        #container04.columns
-          > .wrapper
-          > .inner
-          > div:last-of-type
-          > .full:last-child {
-          border-bottom-right-radius: 0 !important;
-        }
-        #container04.columns > .wrapper > .inner > div:first-of-type,
-        #container04.columns
-          > .wrapper
-          > .inner
-          > div:first-of-type
-          > .full:first-child {
-          border-top-left-radius: 0 !important;
-        }
-        #container04.columns
-          > .wrapper
-          > .inner
-          > .full
-          > .full:first-child:last-child {
-          height: auto;
-        }
-        #container04.columns
-          > .wrapper
-          > .inner
-          > .full
-          > .full:first-child:last-child
-          > * {
-          height: auto;
-          position: relative;
-          width: auto;
-        }
-        #container04 > .wrapper > .inner > :nth-child(1) {
+        #container02 > .wrapper > .inner > :nth-child(1) {
           min-height: 100% !important;
           width: 100% !important;
         }
-        #container04 > .wrapper > .inner > :nth-child(2) {
+        #container02 > .wrapper > .inner > :nth-child(2) {
           min-height: 100% !important;
           width: 100% !important;
-        }
-        #container03 > .wrapper > .inner {
-          --gutters: 2rem;
-          --padding-vertical: 2rem;
-        }
-        #container03.columns > .wrapper > .inner {
-          flex-direction: column !important;
-          flex-wrap: nowrap !important;
-        }
-        #container03.columns > .wrapper > .inner > span {
-          height: 0;
-          margin-top: calc(var(--gutters) * -1);
-          pointer-events: none;
-          visibility: hidden;
-        }
-        #container03.columns > .wrapper > .inner > *:first-child {
-          margin-left: 0 !important;
-          padding-top: 0 !important;
-        }
-        #container03.columns > .wrapper > .inner > * {
-          padding: calc(var(--gutters) * 0.5) 0 !important;
-        }
-        #container03.columns > .wrapper > .inner > *:last-child {
-          padding-bottom: 0 !important;
-        }
-        #container03.columns > .wrapper > .inner > div > .full {
-          margin-left: calc(var(--padding-horizontal) * -1);
-          width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
-        }
-        #container03.columns > .wrapper > .inner > div:first-of-type > .full {
-          margin-left: calc(var(--padding-horizontal) * -1);
-          width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
-        }
-        #container03.columns > .wrapper > .inner > div:last-of-type > .full {
-          margin-left: calc(var(--padding-horizontal) * -1);
-          width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
-        }
-        #container03.columns > .wrapper > .inner > div > .full:first-child {
-          margin-top: calc(var(--gutters) * -0.5) !important;
-        }
-        #container03.columns > .wrapper > .inner > div > .full:last-child {
-          margin-bottom: calc(var(--gutters) * -0.5) !important;
-        }
-        #container03.columns
-          > .wrapper
-          > .inner
-          > div:first-of-type
-          > .full:first-child {
-          margin-top: calc(var(--padding-vertical) * -1) !important;
-        }
-        #container03.columns
-          > .wrapper
-          > .inner
-          > div:last-of-type
-          > .full:last-child {
-          margin-bottom: calc(var(--padding-vertical) * -1) !important;
-        }
-        #container03.columns > .wrapper > .inner > div:first-of-type,
-        #container03.columns
-          > .wrapper
-          > .inner
-          > div:first-of-type
-          > .full:first-child {
-          border-top-left-radius: inherit;
-          border-top-right-radius: inherit;
-        }
-        #container03.columns > .wrapper > .inner > div:last-of-type,
-        #container03.columns
-          > .wrapper
-          > .inner
-          > div:last-of-type
-          > .full:last-child {
-          border-bottom-left-radius: inherit;
-          border-bottom-right-radius: inherit;
-        }
-        #container03.columns > .wrapper > .inner > div:first-of-type,
-        #container03.columns
-          > .wrapper
-          > .inner
-          > div:first-of-type
-          > .full:last-child {
-          border-bottom-left-radius: 0 !important;
-        }
-        #container03.columns > .wrapper > .inner > div:last-of-type,
-        #container03.columns
-          > .wrapper
-          > .inner
-          > div:last-of-type
-          > .full:first-child {
-          border-top-right-radius: 0 !important;
-        }
-        #container03.columns
-          > .wrapper
-          > .inner
-          > .full
-          > .full:first-child:last-child {
-          height: auto;
-        }
-        #container03.columns
-          > .wrapper
-          > .inner
-          > .full
-          > .full:first-child:last-child
-          > * {
-          height: auto;
-          position: relative;
-          width: auto;
-        }
-        #container03 > .wrapper > .inner > :nth-child(1) {
-          min-height: 100% !important;
-          width: 100% !important;
-        }
-        #container03 > .wrapper > .inner > :nth-child(2) {
-          min-height: 100% !important;
-          width: 100% !important;
-        }
-        #container06 > .wrapper > .inner {
-          --gutters: 2rem;
-          --padding-vertical: 2rem;
-        }
-        #container06.columns > .wrapper > .inner {
-          flex-direction: column !important;
-          flex-wrap: nowrap !important;
-        }
-        #container06.columns > .wrapper > .inner > span {
-          height: 0;
-          margin-top: calc(var(--gutters) * -1);
-          pointer-events: none;
-          visibility: hidden;
-        }
-        #container06.columns > .wrapper > .inner > *:first-child {
-          margin-left: 0 !important;
-          padding-top: 0 !important;
-        }
-        #container06.columns > .wrapper > .inner > * {
-          padding: calc(var(--gutters) * 0.5) 0 !important;
-        }
-        #container06.columns > .wrapper > .inner > *:last-child {
-          padding-bottom: 0 !important;
-        }
-        #container06.columns > .wrapper > .inner > div > .full {
-          margin-left: calc(var(--padding-horizontal) * -1);
-          width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
-        }
-        #container06.columns > .wrapper > .inner > div:first-of-type > .full {
-          margin-left: calc(var(--padding-horizontal) * -1);
-          width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
-        }
-        #container06.columns > .wrapper > .inner > div:last-of-type > .full {
-          margin-left: calc(var(--padding-horizontal) * -1);
-          width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
-        }
-        #container06.columns > .wrapper > .inner > div > .full:first-child {
-          margin-top: calc(var(--gutters) * -0.5) !important;
-        }
-        #container06.columns > .wrapper > .inner > div > .full:last-child {
-          margin-bottom: calc(var(--gutters) * -0.5) !important;
-        }
-        #container06.columns
-          > .wrapper
-          > .inner
-          > div:first-of-type
-          > .full:first-child {
-          margin-top: calc(var(--padding-vertical) * -1) !important;
-        }
-        #container06.columns
-          > .wrapper
-          > .inner
-          > div:last-of-type
-          > .full:last-child {
-          margin-bottom: calc(var(--padding-vertical) * -1) !important;
-        }
-        #container06.columns > .wrapper > .inner > div:first-of-type,
-        #container06.columns
-          > .wrapper
-          > .inner
-          > div:first-of-type
-          > .full:first-child {
-          border-top-left-radius: inherit;
-          border-top-right-radius: inherit;
-        }
-        #container06.columns > .wrapper > .inner > div:last-of-type,
-        #container06.columns
-          > .wrapper
-          > .inner
-          > div:last-of-type
-          > .full:last-child {
-          border-bottom-left-radius: inherit;
-          border-bottom-right-radius: inherit;
-        }
-        #container06.columns > .wrapper > .inner > div:first-of-type,
-        #container06.columns
-          > .wrapper
-          > .inner
-          > div:first-of-type
-          > .full:last-child {
-          border-bottom-left-radius: 0 !important;
-        }
-        #container06.columns > .wrapper > .inner > div:last-of-type,
-        #container06.columns
-          > .wrapper
-          > .inner
-          > div:last-of-type
-          > .full:first-child {
-          border-top-right-radius: 0 !important;
-        }
-        #container06.columns
-          > .wrapper
-          > .inner
-          > .full
-          > .full:first-child:last-child {
-          height: auto;
-        }
-        #container06.columns
-          > .wrapper
-          > .inner
-          > .full
-          > .full:first-child:last-child
-          > * {
-          height: auto;
-          position: relative;
-          width: auto;
-        }
-        #video02 video {
-          width: 45rem;
-        }
-        #video02 .frame {
-          width: 45rem;
-        }
-        #gallery01 ul li img {
-          height: auto;
-          display: block;
-          max-height: none;
-          width: 100% !important;
-        }
-        #gallery01 .inner {
-          width: 100%;
-        }
-        #gallery01 ul {
-          flex-direction: column;
-        }
-        #gallery01 ul li {
-          width: 100%;
-        }
-        #gallery01 ul li .thumbnail {
-          display: block;
-        }
-        #gallery01 ul li .frame {
-          display: block;
         }
       }
       @media (max-width: 480px) {
         #main > .inner {
           --spacing: 0.65625rem;
         }
-        #buttons02 li a {
-          width: 6.125rem;
-        }
-        #image04 .frame {
-          height: 16.75rem !important;
+        #buttons01 li a {
+          width: 6rem;
         }
         #image03 .frame {
-          height: 20rem !important;
-        }
-        #image07 .frame {
-          height: 16.75rem !important;
+          height: 18.75rem !important;
         }
         #image05 .frame {
-          height: 16.75rem !important;
+          height: 20rem !important;
         }
       }
       @media (max-width: 360px) {
         #main > .inner {
           --padding-horizontal: 1.5rem;
-          --padding-vertical: 2.25rem;
+          --padding-vertical: 0.28125rem;
           --spacing: 0.5625rem;
         }
-        #buttons02 {
+        #buttons01 {
           gap: 0.5625rem;
         }
-        #image04 .frame {
-          height: 14.65625rem !important;
-        }
         #image03 .frame {
-          height: 17.5rem !important;
-        }
-        #image07 .frame {
-          height: 14.65625rem !important;
+          height: 16.40625rem !important;
         }
         #image05 .frame {
-          height: 14.65625rem !important;
+          height: 17.5rem !important;
         }
-        #text02 {
+        #text01 {
           font-size: 0.625em;
         }
-        #text05 {
+        #text02 {
           font-size: 1.5em;
         }
+        #text03 {
+          font-size: 0.625em;
+        }
         #text04 {
+          font-size: 1.5em;
+        }
+        #text06 {
+          font-size: 1.5em;
+        }
+        #text05 {
           font-size: 0.625em;
         }
         #text09 {
           font-size: 1.5em;
         }
-        #text08 {
-          font-size: 0.625em;
-        }
-        #text03 {
-          font-size: 1.5em;
-        }
         #text10 {
-          font-size: 1.5em;
-        }
-        #text11 {
           font-size: 0.625em;
+        }
+        #text08 {
+          font-size: 1.5em;
         }
         #text07 {
-          font-size: 1.5em;
-        }
-        #text06 {
           font-size: 0.625em;
         }
-        #container05 > .wrapper > .inner {
-          --gutters: 1.5rem;
-          --padding-vertical: 0rem;
+        #gallery01 ul {
+          gap: 0rem;
         }
         #container01 > .wrapper > .inner {
           --gutters: 1.5rem;
           --padding-horizontal: 1.5rem;
           --padding-vertical: 1.5rem;
         }
-        #container07 > .wrapper > .inner {
+        #container02 > .wrapper > .inner {
           --gutters: 1.5rem;
+          --padding-horizontal: 1.5rem;
           --padding-vertical: 1.5rem;
-        }
-        #container04 > .wrapper > .inner {
-          --gutters: 1.5rem;
-          --padding-vertical: 1.5rem;
-        }
-        #container03 > .wrapper > .inner {
-          --gutters: 1.5rem;
-          --padding-vertical: 1.5rem;
-        }
-        #container06 > .wrapper > .inner {
-          --gutters: 1.5rem;
-          --padding-vertical: 1.5rem;
-        }
-        #gallery01 ul {
-          gap: 0rem;
         }
       }
     </style>
@@ -2829,165 +1791,150 @@
     <div id="wrapper">
       <div id="main">
         <div class="inner">
-          <div id="container05" class="container default full">
-            <div class="wrapper">
-              <div class="inner">
-                <ul id="buttons02" class="buttons">
-                  <li>
-                    <a
-                      href="https://twitter.com/cazadoresserie"
-                      class="button n01">
-                      <svg>
-                        <use
-                          xlink:href="#icon-31b8880d36499db40d4e47546c4763f3"></use>
-                      </svg>
-                      <span class="label">Twitter</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.instagram.com/cazadoresserie"
-                      class="button n02">
-                      <svg>
-                        <use
-                          xlink:href="#icon-85976685de3e4af37529a1ce5d57d2a7"></use>
-                      </svg>
-                      <span class="label">Instagram</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="index-en.html" class="button n03">
-                      <svg>
-                        <use
-                          xlink:href="#icon-7a66fac84dc5d9fb5fafce395a384d40"></use>
-                      </svg>
-                      <span class="label">ENG</span>
-                    </a>
-                  </li>
-                </ul>
-                <div id="image02" class="image" data-position="center">
-                  <span class="frame">
-                    <img src="assets/images/image02.jpg?v=8805bece" alt="" />
+          <ul id="buttons01" class="buttons">
+            <li>
+              <a href="https://twitter.com/cazadoresserie" class="button n01">
+                <svg>
+                  <use
+                    xlink:href="#icon-31b8880d36499db40d4e47546c4763f3"></use>
+                </svg>
+                <span class="label">Twitter</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/cazadoresserie"
+                class="button n02">
+                <svg>
+                  <use
+                    xlink:href="#icon-85976685de3e4af37529a1ce5d57d2a7"></use>
+                </svg>
+                <span class="label">Instagram</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="index.html"
+                class="button n03">
+                <svg>
+                  <use
+                    xlink:href="#icon-7a66fac84dc5d9fb5fafce395a384d40"></use>
+                </svg>
+                <span class="label">SPA</span>
+              </a>
+            </li>
+          </ul>
+          <div id="image01" class="image">
+            <span class="frame deferred">
+              <img
+                src="assets/images/cmd-banner01-en.png"
+                data-src="assets/images/cmd-banner01-en.png"
+                alt="" />
+            </span>
+          </div>
+          <p id="text01">
+            An indie animated series about Faye a young monster hunter and her
+            quest to stop the curse that&#39;s turning her into a monster.
+          </p>
+          <div id="video01" class="video">
+            <div class="frame">
+              <iframe
+                src="https://www.youtube-nocookie.com/embed/ZV11M2Q01oQ?autoplay=0&amp;rel=0&amp;loop=0&amp;controls=1&amp;cc_load_policy=0"
+                allowfullscreen="1"></iframe>
+            </div>
+          </div>
+          <h1 id="text02">Synopsis</h1>
+          <div id="gallery01" class="gallery">
+            <div class="inner">
+              <ul>
+                <li>
+                  <span class="thumbnail n01">
+                    <span class="frame">
+                      <img
+                        src="assets/images/gallery01/93fd04fa.jpg?v=fc66872a"
+                        alt="Untitled" />
+                    </span>
                   </span>
-                </div>
-                <p id="text02">
-                  SERIE ANIMADA INDEPENDIENTE SOBRE FAYE UNA JOVEN CAZADORA DE
-                  MONSTRUOS Y SU BÚSQUEDA PARA DETENER LA MALDICIÓN QUE LA ESTÁ
-                  CONVIRTIENDO EN UNO DE ELLOS.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div id="container01" class="container default">
-            <div class="wrapper">
-              <div class="inner">
-                <div id="video02" class="video">
-                  <div class="frame">
-                    <iframe
-                      src="https://www.youtube-nocookie.com/embed/ZV11M2Q01oQ?autoplay=0&amp;rel=0&amp;loop=0&amp;controls=1&amp;cc_load_policy=0"
-                      allowfullscreen="1"></iframe>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div id="container07" class="container default full">
-            <div class="wrapper">
-              <div class="inner">
-                <h2 id="text09">Sinopsis</h2>
-                <div id="gallery01" class="gallery">
-                  <div class="inner">
-                    <ul>
-                      <li>
-                        <span class="thumbnail n01">
-                          <span class="frame">
-                            <img
-                              src="assets/images/gallery01/93fd04fa.jpg?v=8805bece"
-                              alt="Untitled" />
-                          </span>
-                        </span>
-                      </li>
-                      <li>
-                        <span class="thumbnail n02">
-                          <span class="frame">
-                            <img
-                              src="assets/images/gallery01/83b83a70.jpg?v=8805bece"
-                              alt="Untitled" />
-                          </span>
-                        </span>
-                      </li>
-                      <li>
-                        <span class="thumbnail n03">
-                          <span class="frame">
-                            <img
-                              src="assets/images/gallery01/0df864e4.jpg?v=8805bece"
-                              alt="Untitled" />
-                          </span>
-                        </span>
-                      </li>
-                      <li>
-                        <span class="thumbnail n04">
-                          <span class="frame">
-                            <img
-                              src="assets/images/gallery01/734f6d65.jpg?v=8805bece"
-                              alt="Untitled" />
-                          </span>
-                        </span>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <p id="text08">
-                  <span class="p">
-                    Faye es una cazadora de monstruos, que fue maldita en una
-                    mision fallida. Esta maldición borró sus recuerdos y está
-                    convirtiendolá lentamente en un monstruo.
-                    <br />
-                    Faye viaja de pueblo en pueblo junto a su mentor y
-                    compañero, Iván, buscando una cura. En sus viajes se
-                    enfrentan a toda clase de seres sobrenaturales y otros
-                    cazadores de monstruos que buscan atrapar a Faye.
-                    <br />
-                    A lo largo del viaje Faye descubrirá la verdadera naturaleza
-                    de su maldición y aprenderá a usar sus nuevas habilidades
-                    para proteger a las personas que ama.
+                </li>
+                <li>
+                  <span class="thumbnail n02">
+                    <span class="frame">
+                      <img
+                        src="assets/images/gallery01/83b83a70.jpg?v=fc66872a"
+                        alt="Untitled" />
+                    </span>
                   </span>
-                </p>
-              </div>
+                </li>
+                <li>
+                  <span class="thumbnail n03">
+                    <span class="frame">
+                      <img
+                        src="assets/images/gallery01/0df864e4.jpg?v=fc66872a"
+                        alt="Untitled" />
+                    </span>
+                  </span>
+                </li>
+                <li>
+                  <span class="thumbnail n04">
+                    <span class="frame">
+                      <img
+                        src="assets/images/gallery01/734f6d65.jpg?v=fc66872a"
+                        alt="Untitled" />
+                    </span>
+                  </span>
+                </li>
+              </ul>
             </div>
           </div>
-          <h2 id="text03">Conocé a los cazadores</h2>
-          <div id="container04" class="container columns full">
+          <p id="text03">
+            <span class="p">
+              Faye is a young monster hunter, who was cursed during a past
+              failed mission. This curse erased her memory and is slowly turning
+              her into a monster. Faye travels from town to town alongside her
+              mentor and companion, Iván, looking for a cure. During their trip
+              they face all sorts of supernatural beings and other monster
+              hunters who want to capture Faye.
+            </span>
+            <span class="p">
+              Through her journey Faye will discover the true nature of her
+              curse and will learn how to use her new skills to protect the
+              people she loves.
+            </span>
+          </p>
+          <h1 id="text04">Meet the Hunters</h1>
+          <div id="container01" class="container columns full screen">
             <div class="wrapper">
-              <div class="inner">
+              <div class="inner" data-reorder="1,0">
                 <div>
-                  <h3 id="text05">FAYE</h3>
-                  <p id="text04">
-                    Faye es una cazadora de monstruos de 19 años. Faye es
-                    aventurera, valiente, competitiva y muy impulsiva. Su deseo
-                    por encontrar una cura y volver a la normalidad la cegan y
-                    la llevan a lanzarse ante situaciones peligrosas un plan.
-                    Faye busca destacarse como cazadora y muy frecuentemente
-                    busca el reconocimiento y aprobación de su mentor Iván. Faye
-                    ve a Iván como su mentor y referente, pero también como su
-                    amigo más cercano ya que es el vínculo más importante que
-                    tiene Faye desde que perdió sus recuerdos.
+                  <h2 id="text06">FAYE</h2>
+                  <p id="text05">
+                    Faye is a 19 year old monster hunter. Faye is an
+                    adventurous, brave, competitive and very impulsive person.
+                    Her desire to find a cure and go back to being normal often
+                    blinds her. Faye often launches herself to the slightest
+                    chance of finding a cure without taking notice of the risks.
+                    Faye wants to stand out as a monster hunter and looks for
+                    the approval of her mentor Ivan. Ivan often refrains from
+                    acknowledging Faye as a monster hunter. Faye sees Iván as
+                    her mentor and inspiration, but also as her closest friend
+                    since he is the one of the most important bonds that she has
+                    since she lost her memories.
                   </p>
-                  <div id="image04" class="image full">
+                  <div id="image02" class="image full">
                     <span class="frame deferred">
                       <img
                         src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjAiIHk9IjAiIHZpZXdCb3g9IjAgMCAxNTAwIDg0MyIgd2lkdGg9IjE1MDAiIGhlaWdodD0iODQzIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48cmVjdCBmaWxsPSJ0cmFuc3BhcmVudCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIvPjwvc3ZnPg%3D%3D"
-                        data-src="assets/images/image04.png?v=8805bece"
+                        data-src="assets/images/image04.png?v=fc66872a"
                         alt="" />
                     </span>
                   </div>
                 </div>
                 <div>
-                  <div id="image03" class="image" data-position="center">
+                  <div id="image03" class="image">
                     <span class="frame deferred">
                       <img
-                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjAiIHk9IjAiIHZpZXdCb3g9IjAgMCA0NjUgOTMxIiB3aWR0aD0iNDY1IiBoZWlnaHQ9IjkzMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI%2BPHJlY3QgZmlsbD0idHJhbnNwYXJlbnQiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiLz48L3N2Zz4%3D"
-                        data-src="assets/images/image03.png?v=8805bece"
+                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjAiIHk9IjAiIHZpZXdCb3g9IjAgMCA1MDYgMTAxNCIgd2lkdGg9IjUwNiIgaGVpZ2h0PSIxMDE0IiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48cmVjdCBmaWxsPSJ0cmFuc3BhcmVudCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIvPjwvc3ZnPg%3D%3D"
+                        data-src="assets/images/image03.png?v=fc66872a"
                         alt="" />
                     </span>
                   </div>
@@ -2995,38 +1942,43 @@
               </div>
             </div>
           </div>
-          <div id="container03" class="container columns full">
+          <div id="container02" class="container columns full screen">
             <div class="wrapper">
               <div class="inner">
                 <div>
                   <div id="image05" class="image">
                     <span class="frame deferred">
                       <img
-                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjAiIHk9IjAiIHZpZXdCb3g9IjAgMCA0NDYgMTIxMCIgd2lkdGg9IjQ0NiIgaGVpZ2h0PSIxMjEwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48cmVjdCBmaWxsPSJ0cmFuc3BhcmVudCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIvPjwvc3ZnPg%3D%3D"
-                        data-src="assets/images/image05.png?v=8805bece"
+                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjAiIHk9IjAiIHZpZXdCb3g9IjAgMCA0MzUgMTE3OSIgd2lkdGg9IjQzNSIgaGVpZ2h0PSIxMTc5IiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48cmVjdCBmaWxsPSJ0cmFuc3BhcmVudCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIvPjwvc3ZnPg%3D%3D"
+                        data-src="assets/images/image05.png?v=fc66872a"
                         alt="" />
                     </span>
                   </div>
                 </div>
                 <div>
-                  <h2 id="text07">IVÁN PAURA</h2>
-                  <p id="text06">
-                    Iván es un cazador de monstruos experto. Es descendiente de
-                    Dante Paura, primer cazador de monstruos y fundador de la
-                    Asociación de Cazadores de Monstruos (ACDM). Iván debe
-                    lidiar con las expectativas de su padre Giorno quien busca
-                    que Ivan lo suceda como jefe de la ACDM. Iván es
-                    extrovertido, carismático, riguroso y algo egocéntrico. Iván
-                    con frecuencia miente para evitar situaciones que no quiere
-                    enfrentar. Iván no disfruta de ser un cazador ya que lo
-                    considera un trabajo muy peligroso. Iván ve a Faye con
-                    cariño pero no logra reconocerla como una cazadora.
+                  <h2 id="text08">IVÁN PAURA</h2>
+                  <p id="text07">
+                    <span class="p">
+                      Iván is an expert monster hunter. He is a descendant of
+                      Dante Paura, the very first monster hunter and founder of
+                      the Monster Hunter Association (MHA). Iván deals with the
+                      expectation of his father Giorno who wants Ivan to take
+                      over and become the next leader of the MHA. Iván is
+                      extroverted, charismatic, rigid and a little bit
+                      egocentric at times. Iván often lies to avoid facing
+                      complex situations. Iván doesn’t enjoy being a monster
+                      hunter. He thinks the job is far more dangerous than
+                      people think.
+                      <br />
+                      Iván appreciates Faye’s companionship but he can’t
+                      possibly see her as a fellow monster hunter.
+                    </span>
                   </p>
-                  <div id="image07" class="image full">
+                  <div id="image04" class="image full">
                     <span class="frame deferred">
                       <img
                         src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjAiIHk9IjAiIHZpZXdCb3g9IjAgMCAxNTAwIDg0MyIgd2lkdGg9IjE1MDAiIGhlaWdodD0iODQzIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48cmVjdCBmaWxsPSJ0cmFuc3BhcmVudCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIvPjwvc3ZnPg%3D%3D"
-                        data-src="assets/images/image07.png?v=8805bece"
+                        data-src="assets/images/image07.png?v=fc66872a"
                         alt="" />
                     </span>
                   </div>
@@ -3034,58 +1986,39 @@
               </div>
             </div>
           </div>
-          <div id="container06" class="container default full">
-            <div class="wrapper">
-              <div class="inner">
-                <div id="image08" class="image" data-position="center">
-                  <span class="frame">
-                    <img src="assets/images/image08.png?v=8805bece" alt="" />
-                  </span>
-                </div>
-                <h2 id="text10">Universo</h2>
-                <p id="text11">
-                  <span class="p">
-                    Cazadores de monstruos transcurre en un universo donde la
-                    existencia de criptidos, seres paranormales y sobrenaturales
-                    ha sido comprobada hace siglos. Estos seres son considerados
-                    como una amenza a la humanidad lo cual llevo a la creacion
-                    de la Asociacion de Cazadores de Monstruos. La ACDM se
-                    dedica a capturar, estudiar y eliminar a estos seres. Fue
-                    fundada en 1775 por los primeros cazadores: Paura, Tremare,
-                    Tillinghast y Blackwood con la finalidad de mantener a salvo
-                    a la humanidad.
-                    <br />
-                    Cualquier persona puede capacitarse para ser Cazador de
-                    Monstruos, pero sólo los descendientes de los 4 primeros
-                    cazadores ocupan los carfos mas altos de la ACDM. La ACDM ha
-                    sido liderada por los Paura desde su creación.
-                  </span>
-                  <span class="p">
-                    Los civiles tienen la obligación de reportar la presencia de
-                    cualquier ser sobrenatural y tienen prohibido hacer
-                    cualquier actividad de insite la aparición de un ser
-                    sobrenatural.
-                  </span>
-                  <span class="p">
-                    Algunos de los seres sobrenaturales que la ACDM se ocupa de
-                    capturar y regular son: Fantasmas, Brujas/os, Licántropos,
-                    Wendigos, Skinwalkers, Demonios, Vampiros, No muertos, entre
-                    muchos otros.
-                  </span>
-                </p>
-                <div id="image01" class="image">
-                  <span class="frame">
-                    <img src="assets/images/image01.png?v=8805bece" alt="" />
-                  </span>
-                </div>
-              </div>
-            </div>
+          <div id="image07" class="image" data-position="center">
+            <span class="frame">
+              <img src="assets/images/image08.png?v=fc66872a" alt="" />
+            </span>
           </div>
-          <!-- <div id="credits" class="icc-credits">
+          <h1 id="text09">Universe</h1>
+          <p id="text10">
+            <span class="p">
+              Monster hunters takes place in an universe where cryptid,
+              paranormal and supernatural beings exist and are illegal. The
+              Monster Hunter Association (MHA) captures, studies and eradicates
+              these beings. The MHA was founded by the first hunters: Paura,
+              Tremare, Tillinghast and Blackwood with the goal to protect
+              humanity.
+              <br />
+              Anybody can be a monster hunter but only the descendants of the
+              first 4 monster hunters can lead the ACDM. Civilians must report
+              any sights of a cryptid. Any activity that could summon a
+              supernatural being is forbidden. Some of the creatures that the
+              MHA captures are Ghosts, Witches and wizards, Lycanthropes,
+              Wendigos, Skinwalkers, Demons, Vampires, Undead among many others.
+            </span>
+          </p>
+          <div id="image08" class="image">
+            <span class="frame">
+              <img src="assets/images/image01.png?v=fc66872a" alt="" />
+            </span>
+          </div>
+          <div id="credits" class="icc-credits">
             <span>
               <a href="https://carrd.co/build?ref=auto">Made with Carrd</a>
             </span>
-          </div> -->
+          </div>
         </div>
       </div>
     </div>
